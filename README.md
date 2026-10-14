@@ -53,14 +53,14 @@ included* but modified to use `daisugi` defaults.
 | Status | Algorithm          | Focus                               |
 |--------|--------------------|-------------------------------------|
 | ✅     | Boulevard          | stochastic gradient boosting        |
-| ✅     | ChimeraBoost       | chimera gradient boosting           |
+| ✅     | ChimeraBoost       | numba-accelerated boosting          |
+| ✅     | CycGBM             | distributional boosting             |
+| ✅     | FIGS               | interpretable greedy tree sums      |
 | ✅     | Conditional Trees  | unbiased recursive partitioning     |
-| ✅     | CycGBM             | distributional gradient boosting    |
 | ✅     | EBM                | interpretable additive boosting     |
 | ✅     | Evolutionary Trees | genetic tree optimization           |
 | ✅     | Extreme            | eXtreme gradient boosted **forest** |
 | 🚧     | FairGBM            | fairness-aware boosting             |
-| ✅     | FIGS               | interpretable greedy tree sums      |
 | ✅     | GRANDE             | differentiable tree ensembles       |
 | ✅     | Langevin           | Catboost with SGLB                  |
 | ✅     | Linear             | LightGBM with GBDT-PL               |
@@ -70,9 +70,9 @@ included* but modified to use `daisugi` defaults.
 | ✅     | NGBoost            | natural gradient prediction         |
 | ✅     | NRGBoost           | energy-based generative boosting    |
 | ✅     | Perpetual          | continual tree learning             |
-| ✅     | SkopeRules         | interpretable rule extraction       |
+| ✅     | SkopeRules         | interpretable rule lists            |
 | ✅     | SnapBoost          | heterogeneous boosting systems      |
-| ✅     | STreeD             | optimal sparse decision trees       |
+| ✅     | STreeD             | optimal sparse trees                |
 | ✅     | TAO                | tree alternating optimization       |
 | ✅     | WildWood           | randomized online forests           |
 | ✅     | Yggdrasil          | scalable tree ecosystems            |
@@ -81,11 +81,11 @@ included* but modified to use `daisugi` defaults.
 
 ### Dropped engines
 
-| Algorithm    | Reason                                                        |
-|--------------|---------------------------------------------------------------|
-| scikit-garden| abandoned upstream since 2017, does not build on modern Python|
-| PkBoost      | no Linux/macOS wheels published, sdist requires Rust toolchain|
-| KTBoost      | abandoned upstream since 2021; author moved to GPBoost (#23)  |
+| Algorithm     | Reason                                                         |
+|---------------|----------------------------------------------------------------|
+| scikit-garden | abandoned upstream since 2017, does not build on modern Python |
+| PkBoost       | no Linux/macOS wheels, sdist requires Rust toolchain          |
+| KTBoost       | abandoned upstream since 2021; author moved to GPBoost (#23)   |
 
 ### Blocked engines
 
