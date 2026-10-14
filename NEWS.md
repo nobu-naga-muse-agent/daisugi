@@ -5,9 +5,6 @@
 
 * finish **GRANDE** binding and vendor **MorphBoost** Python source
 
-* add batch 1 engines: **FIGS**, **SkopeRules**, **TAO**, **STreeD**,
-  **ChimeraBoost**, **CycGBM**
-
 * pin Python to 3.11 (`snapml` has no cp313 wheels)
 
 * drop **scikit-garden**, **PkBoost**, **KTBoost** (abandoned upstream);
